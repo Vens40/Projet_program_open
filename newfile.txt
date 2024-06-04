@@ -1,0 +1,33 @@
+6) La différence entre cloner et forker un projet réside dans le contexte et le contrôle que vous avez sur le projet :
+
+- Cloner un projet :
+  - Avantages :
+    - Vous obtenez une copie du projet sur votre propre système local, ce qui vous permet de travailler dessus et d'y contribuer sans affecter le projet original.
+    - Vous pouvez cloner n'importe quel dépôt Git, que vous ayez des autorisations pour y accéder ou non.
+    - Vous pouvez synchroniser votre copie locale avec le dépôt distant à tout moment pour obtenir les dernières mises à jour.
+  - Inconvénients :
+    - Vous ne possédez pas le projet original, donc vous ne pouvez pas apporter de modifications directes à celui-ci.
+- Forker un projet :
+  - Avantages :
+    - Vous créez une copie du projet entier sous votre propre compte sur la plateforme de gestion de code (comme GitHub), ce qui vous donne un contrôle total sur la copie.
+    - Vous pouvez modifier librement votre fork du projet et soumettre des demandes de tirage (pull requests) pour proposer des modifications au projet original.
+    - Vous pouvez garder une trace des modifications que vous apportez à votre fork et les synchroniser avec le projet original si nécessaire.
+  - Inconvénients :
+    - Vous devez avoir des autorisations pour forker un projet, ce qui signifie que vous ne pouvez pas forker un projet privé auquel vous n'avez pas accès.
+
+7) Les deux commandes à exécuter sur un fichier dans un projet Git avant de l'envoyer sur un dépôt distant sont :
+
+- `git add <nom_du_fichier>` : Cette commande ajoute les modifications du fichier à l'index, prêtes à être validées dans le prochain commit.
+- `git commit -m "Message de commit"` : Cette commande valide les modifications ajoutées à l'index avec un message de commit descriptif.
+
+8) La commande qu'on doit obligatoirement exécuter après avoir créé un projet Git en local pour que ce projet soit reconnu en tant qu'un projet Git est :
+
+- git init : Cette commande initialise un nouveau dépôt Git dans le répertoire local, créant ainsi un nouveau projet Git.
+
+9) Un fichier dans un projet Git est connu dans trois états :
+
+- Modifié (Modified) : Le fichier a été modifié depuis le dernier commit.
+- Indexé (Staged) :Les modifications du fichier ont été ajoutées à l'index en vue du prochain commit à l'aide de la commande `git add`.
+- Validé (Committed) :Les modifications du fichier ont été validées dans le référentiel Git à l'aide de la commande `git commit`.
+
+
