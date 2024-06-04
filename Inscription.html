@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <h2 class="logo">PROJET<span>_DEwEb</span></h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Videos.html">Vidéos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="#">Inscription</a></li>
+            </ul>
+            <button type="button">Telechaje</button>
+        </nav>
+    </div>
+    <h1>Inscription</h1>
+    <br>
+    <br>
+     <fieldset style="width: 50%;">
+<form action="traitement.php" method="post" enctype="multipart/form-data">
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+    
+    <label for="prenom">Prénom :</label><br>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+    
+    <label for="adresse">Adresse :</label><br>
+    <input type="text" id="adresse" name="adresse" required><br><br>
+    
+    <label for="date_naissance">Date de Naissance :</label><br>
+    <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+    
+    <label for="date_inscription">Date d'inscription :</label><br>
+    <input type="date" id="date_inscription" name="date_inscription" required><br><br>
+    
+    <label for="photo">Photo :</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+    
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="telephone">Numéro de téléphone :</label><br>
+    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required><br><br>
+    
+    <label for="mot_de_passe">Mot de passe :</label><br>
+    <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+    
+    <input type="submit" value="S'inscrire">
+</form>
+</fieldset>
+<footer>
+    <p>© 2024PROJET_DEwEb </p>
+</footer>
+</body>
+</html>
